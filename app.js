@@ -3,9 +3,9 @@
 // initialize state
 
 // set event listeners 
-  // get user input
-  // use user input to update state 
-  // update DOM to reflect the new state
+//   get user input
+//   use user input to update state 
+//   update DOM to reflect the new state
 
 
 const btn = document.getElementById('btn');
@@ -18,6 +18,7 @@ let guessesRemaining = 4;
 btn.addEventListener('click', ()=>{
 });
 
-alert('')
+//alert('')
 
 //Math.floor(Math.random()*100);
+// dkajhsfkh
