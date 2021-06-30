@@ -5,14 +5,15 @@ const btn = document.getElementById('btn');
 const targetNumber = Math.floor(Math.random() * 20);
 const userGuess = document.getElementById('input');
 const message = document.getElementById('message'); 
-let guessesRemaining = 4;
+let guessesRemaining = 3;
 
 // set event listeners 
 btn.addEventListener('click', ()=>{  
-  //   get user input
-  //   use user input to update state 
-  //   update DOM to reflect the new state
+    if (guessesRemaining === 0) {
+        message.textContent = 'You are all out of guesses! Game Over!';
+    }
     const userGuessNum = Number(userGuess);
+    guessesRemaining--;
 
 
 
