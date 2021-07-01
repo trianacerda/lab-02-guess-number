@@ -2,3 +2,7 @@
 #reset-btn{
     visibility: hidden;
 }
+
+#input, #btn, #reset-btn{
+    border-radius: 40px;
+}
