@@ -1,12 +1,12 @@
-export function compareNumbers(targetNumber, userGuessNum){
-    let results;  
-    if (targetNumber === userGuessNum) {
-        results.textContent = 'You WIN! Game Over!';
+export function compareNumbers(btn, results, targetNumber, userGuessNum){  
+    if (targetNumber > userGuessNum) {
+        results.textContent = 'You guessed too low';
     }
-    else if (targetNumber > userGuessNum) {
+    else if (targetNumber < userGuessNum) {
         results.textContent = 'You guessed too high';
     }
     else {
-        results.textContent = 'You guessed too low';
+        results.textContent = 'You WIN! Game Over!';
+        btn.disabled = true;
     }
 }
