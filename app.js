@@ -1,4 +1,4 @@
-import { compareNumbers } from "./utils.js";
+import { compareNumbers } from './utils.js';
 
 // import functions and grab DOM elements
 const btn = document.getElementById('btn');
@@ -12,19 +12,19 @@ const frog = document.getElementById('frog');
 
 let guessesRemaining = 4;
 
-console.log(targetNumber);
+//console.log(targetNumber);
 // set event listeners 
 btn.addEventListener('click', ()=>{  
     const userGuessNum = Number(userGuess.value);
     guessesRemaining--;
     frog.textContent = `You have ${guessesRemaining} guesses left`;
-    compareNumbers(btn, message, targetNumber, userGuessNum);
+    compareNumbers(resetBtn, btn, message, targetNumber, userGuessNum);
     if (guessesRemaining === 0 && userGuessNum !== targetNumber) {
         message.textContent = 'You are all out of guesses! Game Over!';
         btn.disabled = true;
         resetBtn.style.visibility = 'visible';
     } 
-    console.log(guessesRemaining);
+    //console.log(guessesRemaining);
     
 
 
