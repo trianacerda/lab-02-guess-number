@@ -1,1 +1,4 @@
 /* add home page styles here */
+#reset-btn{
+    visibility: hidden;
+}

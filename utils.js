@@ -8,5 +8,6 @@ export function compareNumbers(btn, results, targetNumber, userGuessNum){
     else {
         results.textContent = 'You WIN! Game Over!';
         btn.disabled = true;
+        resetBtn.style.visibility = 'visible';
     }
 }
